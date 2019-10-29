@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>登录成功</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <td>学号</td>
+        <td>姓名</td>
+        <td>班级号</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in students_list %}
+    <tr>
+        <td>{{item.sno}}</td>
+        <td>{{item.sname}}</td>
+        <td>{{item.cno}}</td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
